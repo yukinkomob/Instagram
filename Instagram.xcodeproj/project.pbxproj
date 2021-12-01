@@ -13,6 +13,11 @@
 		046866AD2757BB0D00DE8443 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 046866AB2757BB0D00DE8443 /* Main.storyboard */; };
 		046866AF2757BB1000DE8443 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 046866AE2757BB1000DE8443 /* Assets.xcassets */; };
 		046866B22757BB1000DE8443 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 046866B02757BB1000DE8443 /* LaunchScreen.storyboard */; };
+		046866BC2757C41000DE8443 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046866BB2757C41000DE8443 /* LoginViewController.swift */; };
+		046866BF2757C41F00DE8443 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046866BE2757C41F00DE8443 /* HomeViewController.swift */; };
+		046866C22757C42C00DE8443 /* ImageSelectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046866C12757C42C00DE8443 /* ImageSelectViewController.swift */; };
+		046866C52757C43900DE8443 /* PostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046866C42757C43900DE8443 /* PostViewController.swift */; };
+		046866C82757C44600DE8443 /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046866C72757C44600DE8443 /* SettingViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +29,11 @@
 		046866AE2757BB1000DE8443 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		046866B12757BB1000DE8443 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		046866B32757BB1000DE8443 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		046866BB2757C41000DE8443 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		046866BE2757C41F00DE8443 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		046866C12757C42C00DE8443 /* ImageSelectViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageSelectViewController.swift; sourceTree = "<group>"; };
+		046866C42757C43900DE8443 /* PostViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostViewController.swift; sourceTree = "<group>"; };
+		046866C72757C44600DE8443 /* SettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +73,11 @@
 				046866AE2757BB1000DE8443 /* Assets.xcassets */,
 				046866B02757BB1000DE8443 /* LaunchScreen.storyboard */,
 				046866B32757BB1000DE8443 /* Info.plist */,
+				046866BB2757C41000DE8443 /* LoginViewController.swift */,
+				046866BE2757C41F00DE8443 /* HomeViewController.swift */,
+				046866C12757C42C00DE8443 /* ImageSelectViewController.swift */,
+				046866C42757C43900DE8443 /* PostViewController.swift */,
+				046866C72757C44600DE8443 /* SettingViewController.swift */,
 			);
 			path = Instagram;
 			sourceTree = "<group>";
@@ -137,6 +152,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				046866C22757C42C00DE8443 /* ImageSelectViewController.swift in Sources */,
+				046866BF2757C41F00DE8443 /* HomeViewController.swift in Sources */,
+				046866C52757C43900DE8443 /* PostViewController.swift in Sources */,
+				046866C82757C44600DE8443 /* SettingViewController.swift in Sources */,
+				046866BC2757C41000DE8443 /* LoginViewController.swift in Sources */,
 				046866AA2757BB0D00DE8443 /* ViewController.swift in Sources */,
 				046866A62757BB0D00DE8443 /* AppDelegate.swift in Sources */,
 				046866A82757BB0D00DE8443 /* SceneDelegate.swift in Sources */,
