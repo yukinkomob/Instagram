@@ -17,6 +17,7 @@
 		046866C22757C42C00DE8443 /* ImageSelectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046866C12757C42C00DE8443 /* ImageSelectViewController.swift */; };
 		046866C52757C43900DE8443 /* PostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046866C42757C43900DE8443 /* PostViewController.swift */; };
 		046866C82757C44600DE8443 /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046866C72757C44600DE8443 /* SettingViewController.swift */; };
+		8D1F10A52758F8B600F51A33 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D1F10A42758F8B600F51A33 /* TabBarController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		046866C12757C42C00DE8443 /* ImageSelectViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageSelectViewController.swift; sourceTree = "<group>"; };
 		046866C42757C43900DE8443 /* PostViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostViewController.swift; sourceTree = "<group>"; };
 		046866C72757C44600DE8443 /* SettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
+		8D1F10A42758F8B600F51A33 /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +74,7 @@
 				046866B32757BB1000DE8443 /* Info.plist */,
 				046866BB2757C41000DE8443 /* LoginViewController.swift */,
 				046866BE2757C41F00DE8443 /* HomeViewController.swift */,
+				8D1F10A42758F8B600F51A33 /* TabBarController.swift */,
 				046866C12757C42C00DE8443 /* ImageSelectViewController.swift */,
 				046866C42757C43900DE8443 /* PostViewController.swift */,
 				046866C72757C44600DE8443 /* SettingViewController.swift */,
@@ -150,6 +153,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				046866C22757C42C00DE8443 /* ImageSelectViewController.swift in Sources */,
+				8D1F10A52758F8B600F51A33 /* TabBarController.swift in Sources */,
 				046866BF2757C41F00DE8443 /* HomeViewController.swift in Sources */,
 				046866C52757C43900DE8443 /* PostViewController.swift in Sources */,
 				046866C82757C44600DE8443 /* SettingViewController.swift in Sources */,
