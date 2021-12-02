@@ -6,8 +6,9 @@ target 'Instagram' do
   use_frameworks!
 
   # Pods for Instagram
-  
+
   # Add the Firebase pod for Google Analytics
+  pod 'Firebase','8.10.0'
   pod 'Firebase/Analytics'
 
   # For Analytics without IDFA collection capability, use this pod instead
@@ -17,5 +18,6 @@ target 'Instagram' do
   # For example, to use Firebase Authentication and Cloud Firestore
   pod 'Firebase/Auth'
   pod 'Firebase/Firestore'
-
+  pod 'Firebase/Storage'
+  pod 'FirebaseUI/Storage'
 end
