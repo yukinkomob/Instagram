@@ -6,8 +6,18 @@
 //
 
 import UIKit
+import Firebase
+import SVProgressHUD
 
 class SettingViewController: UIViewController {
+    
+    @IBOutlet weak var displayNameTextField: UITextField!
+    
+    @IBAction func handleChangeButton(_ sender: Any) {
+    }
+    
+    @IBAction func handleLogoutButton(_ sender: Any) {
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -15,6 +25,14 @@ class SettingViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        self.viewWillAppear(animated)
+        
+        let user = Auth.auth().currentUser
+        if let user = user {
+            displayNameTextField.text = user.displayName
+        }
+    }
 
     /*
     // MARK: - Navigation
