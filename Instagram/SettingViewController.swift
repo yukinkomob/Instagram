@@ -48,7 +48,7 @@ class SettingViewController: UIViewController {
     }
     
     override func viewWillAppear(_ animated: Bool) {
-        self.viewWillAppear(animated)
+        super.viewWillAppear(animated)
         
         let user = Auth.auth().currentUser
         if let user = user {
