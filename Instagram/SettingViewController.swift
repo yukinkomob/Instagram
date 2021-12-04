@@ -39,6 +39,11 @@ class SettingViewController: UIViewController {
     }
     
     @IBAction func handleLogoutButton(_ sender: Any) {
+        try! Auth.auth().signOut()
+        
+        let loginViewController = self.storyboard?.instantiateViewController(withIdentifier: "Login")
+        self.present(loginViewController!, animated: true, completion: nil)
+        tabBarController?.selectedIndex = 0
     }
 
     override func viewDidLoad() {
