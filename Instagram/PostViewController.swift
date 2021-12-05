@@ -6,8 +6,12 @@
 //
 
 import UIKit
+import Firebase
+import SVProgressHUD
 
 class PostViewController: UIViewController {
+    
+    var image: UIImage!
     
     @IBOutlet weak var imageView: UIImageView!
     @IBOutlet weak var textField: UITextField!
@@ -22,6 +26,7 @@ class PostViewController: UIViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        imageView.image = image
     }
     
 
