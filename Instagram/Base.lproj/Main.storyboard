@@ -16,8 +16,60 @@
                     <view key="view" contentMode="scaleToFill" id="TtQ-bF-B2h">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b9e-uX-m1V">
+                                <rect key="frame" x="57" y="124" width="300" height="31"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="300" id="E3S-hS-Rvk"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="ライブラリ">
+                                    <backgroundConfiguration key="background" image="btn"/>
+                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="handleLibraryButton:" destination="KGQ-kD-VOr" eventType="touchUpInside" id="0TJ-Os-K24"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ST2-XU-KEp" userLabel="キャンセル">
+                                <rect key="frame" x="57" y="206" width="300" height="31"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="300" id="A9g-6F-hBP"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="キャンセル">
+                                    <backgroundConfiguration key="background" image="btn"/>
+                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="zhandleCancelButton:" destination="KGQ-kD-VOr" eventType="touchUpInside" id="nWL-LK-FNZ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jDZ-OR-zrl">
+                                <rect key="frame" x="57" y="165" width="300" height="31"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="300" id="XOs-mo-AMs"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="カメラ">
+                                    <backgroundConfiguration key="background" image="btn"/>
+                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="handleCameraButton:" destination="KGQ-kD-VOr" eventType="touchUpInside" id="i6N-2V-tZt"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="A1e-ZF-JHj"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="jDZ-OR-zrl" firstAttribute="top" secondItem="b9e-uX-m1V" secondAttribute="bottom" constant="10" id="3yp-fE-Hyz"/>
+                            <constraint firstItem="jDZ-OR-zrl" firstAttribute="centerX" secondItem="TtQ-bF-B2h" secondAttribute="centerX" id="E1x-EV-rNI"/>
+                            <constraint firstItem="b9e-uX-m1V" firstAttribute="top" secondItem="A1e-ZF-JHj" secondAttribute="top" constant="80" id="MAS-px-zGM"/>
+                            <constraint firstItem="b9e-uX-m1V" firstAttribute="centerX" secondItem="TtQ-bF-B2h" secondAttribute="centerX" id="Sdj-J3-wVT"/>
+                            <constraint firstItem="ST2-XU-KEp" firstAttribute="centerX" secondItem="TtQ-bF-B2h" secondAttribute="centerX" id="Uqz-jO-QWv"/>
+                            <constraint firstItem="ST2-XU-KEp" firstAttribute="top" secondItem="jDZ-OR-zrl" secondAttribute="bottom" constant="10" id="vnn-cn-HnG"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="投稿" image="camera" id="pzc-QY-o5M"/>
                 </viewController>
