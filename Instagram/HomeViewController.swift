@@ -16,6 +16,8 @@ class HomeViewController: UIViewController, UITableViewDataSource, UITableViewDe
     
     var listener: ListenerRegistration?
     
+    var touchedDataId: String = ""
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -50,6 +52,13 @@ class HomeViewController: UIViewController, UITableViewDataSource, UITableViewDe
         super.viewWillDisappear(animated)
         print("DEBUG_PRINT: viewWillDisappear")
         listener?.remove()
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "toComment" {
+            let nextVC = segue.destination as! CommentViewController
+            nextVC.postDataId = touchedDataId
+        }
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -97,16 +106,8 @@ class HomeViewController: UIViewController, UITableViewDataSource, UITableViewDe
         let postData = postArray[indexPath!.row]
         
         if let myid = Auth.auth().currentUser?.uid {
-            
-            // TODO コメント入力用の別画面を開く
-//            var updateValue: FieldValue
-//            if postData.isLiked {
-//                updateValue = FieldValue.arrayRemove([myid])
-//            } else {
-//                updateValue = FieldValue.arrayUnion([myid])
-//            }
-//            let postRef = Firestore.firestore().collection(Const.PostPath).document(postData.id)
-//            postRef.updateData(["likes": updateValue])
+            touchedDataId = postData.id
+            self.performSegue(withIdentifier: "toComment", sender: nil)
         }
     }
 }

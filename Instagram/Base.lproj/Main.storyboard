@@ -233,32 +233,38 @@
             <objects>
                 <viewController id="DJ8-Kq-2a1" customClass="CommentViewController" customModule="Instagram" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="SkU-vM-4NO" userLabel="I">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="コメント入力" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fKw-tJ-38r">
-                                <rect key="frame" x="10" y="54" width="104" height="20.5"/>
+                                <rect key="frame" x="10" y="10" width="104" height="20.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" usesAttributedText="YES" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="O8S-hu-zUo">
-                                <rect key="frame" x="10" y="84.5" width="394" height="726.5"/>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" usesAttributedText="YES" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="O8S-hu-zUo">
+                                <rect key="frame" x="10" y="40.5" width="394" height="716.5"/>
                                 <attributedString key="attributedText"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <stackView opaque="NO" contentMode="scaleToFill" spacing="93" translatesAutoresizingMaskIntoConstraints="NO" id="3Fc-cn-dMe">
-                                <rect key="frame" x="65" y="821" width="284" height="31"/>
+                                <rect key="frame" x="65" y="767" width="284" height="31"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qKC-zr-SWF">
                                         <rect key="frame" x="0.0" y="0.0" width="95.5" height="31"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" title="キャンセル"/>
+                                        <connections>
+                                            <action selector="cancel:" destination="DJ8-Kq-2a1" eventType="touchUpInside" id="bHb-OU-eR6"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vUi-py-WBk">
                                         <rect key="frame" x="188.5" y="0.0" width="95.5" height="31"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" title="投稿"/>
+                                        <connections>
+                                            <action selector="postComment:" destination="DJ8-Kq-2a1" eventType="touchUpInside" id="luZ-Td-e66"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -276,6 +282,10 @@
                             <constraint firstItem="fKw-tJ-38r" firstAttribute="top" secondItem="Xge-R3-Ts5" secondAttribute="top" constant="10" id="ubD-VT-KL3"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="JER-yM-Osq"/>
+                    <connections>
+                        <outlet property="commentText" destination="O8S-hu-zUo" id="im3-2u-cE2"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JYS-LB-OZh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -378,6 +388,7 @@
                     <tabBarItem key="tabBarItem" title="ホーム" image="home" id="uww-NR-JGx"/>
                     <connections>
                         <outlet property="tableView" destination="ZfU-J4-7kr" id="6Tz-Nb-pji"/>
+                        <segue destination="DJ8-Kq-2a1" kind="show" identifier="toComment" id="C4Z-fd-ED2"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="m1a-6a-To0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
