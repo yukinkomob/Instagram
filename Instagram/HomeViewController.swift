@@ -61,6 +61,7 @@ class HomeViewController: UIViewController, UITableViewDataSource, UITableViewDe
         cell.setPostData(postArray[indexPath.row])
         
         cell.likeButton.addTarget(self, action: #selector(handleButton(_:forEvent:)), for: .touchUpInside)
+        cell.commentButton.addTarget(self, action: #selector(handleCommentButton(_:forEvent:)), for: .touchUpInside)
         
         return cell
     }
@@ -83,6 +84,29 @@ class HomeViewController: UIViewController, UITableViewDataSource, UITableViewDe
             }
             let postRef = Firestore.firestore().collection(Const.PostPath).document(postData.id)
             postRef.updateData(["likes": updateValue])
+        }
+    }
+    
+    @objc func handleCommentButton(_ sender: UIButton, forEvent event: UIEvent) {
+        print("DEBUG_PRINT: commentボタンがタップされました")
+        
+        let touch = event.allTouches?.first
+        let point = touch!.location(in: self.tableView)
+        let indexPath = tableView.indexPathForRow(at: point)
+        
+        let postData = postArray[indexPath!.row]
+        
+        if let myid = Auth.auth().currentUser?.uid {
+            
+            // TODO コメント入力用の別画面を開く
+//            var updateValue: FieldValue
+//            if postData.isLiked {
+//                updateValue = FieldValue.arrayRemove([myid])
+//            } else {
+//                updateValue = FieldValue.arrayUnion([myid])
+//            }
+//            let postRef = Firestore.firestore().collection(Const.PostPath).document(postData.id)
+//            postRef.updateData(["likes": updateValue])
         }
     }
 }

@@ -62,7 +62,7 @@
                             <constraint firstAttribute="height" constant="40" id="zw2-iE-rqT"/>
                         </constraints>
                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                        <state key="normal" title="Button">
+                        <state key="normal" title="Comment Button">
                             <imageReference key="image" image="bubble.right" catalog="system" symbolScale="default" renderingMode="hierarchical-single">
                                 <hierarchicalColors>
                                     <color systemColor="labelColor"/>
@@ -98,6 +98,7 @@
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <connections>
                 <outlet property="captionLabel" destination="CqY-Ju-DUb" id="So8-5g-OUL"/>
+                <outlet property="commentButton" destination="rl1-0Y-mSU" id="SpP-fU-xqT"/>
                 <outlet property="dateLabel" destination="DSl-4g-Gj2" id="Olu-bC-8Vy"/>
                 <outlet property="likeButton" destination="V81-ac-lEt" id="v9R-Jv-dNQ"/>
                 <outlet property="likeLabel" destination="qvZ-Qc-QHi" id="B8c-CB-5I5"/>

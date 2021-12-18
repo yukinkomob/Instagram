@@ -228,6 +228,59 @@
             </objects>
             <point key="canvasLocation" x="1844.9275362318842" y="77.678571428571431"/>
         </scene>
+        <!--Comment View Controller-->
+        <scene sceneID="R7w-DI-rEt">
+            <objects>
+                <viewController id="DJ8-Kq-2a1" customClass="CommentViewController" customModule="Instagram" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="SkU-vM-4NO" userLabel="I">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="コメント入力" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fKw-tJ-38r">
+                                <rect key="frame" x="10" y="54" width="104" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" usesAttributedText="YES" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="O8S-hu-zUo">
+                                <rect key="frame" x="10" y="84.5" width="394" height="726.5"/>
+                                <attributedString key="attributedText"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="93" translatesAutoresizingMaskIntoConstraints="NO" id="3Fc-cn-dMe">
+                                <rect key="frame" x="65" y="821" width="284" height="31"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qKC-zr-SWF">
+                                        <rect key="frame" x="0.0" y="0.0" width="95.5" height="31"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="キャンセル"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vUi-py-WBk">
+                                        <rect key="frame" x="188.5" y="0.0" width="95.5" height="31"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="投稿"/>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Xge-R3-Ts5"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="3Fc-cn-dMe" firstAttribute="centerX" secondItem="SkU-vM-4NO" secondAttribute="centerX" id="EK3-Na-U2I"/>
+                            <constraint firstItem="fKw-tJ-38r" firstAttribute="leading" secondItem="Xge-R3-Ts5" secondAttribute="leading" constant="10" id="JUT-zK-0CQ"/>
+                            <constraint firstItem="3Fc-cn-dMe" firstAttribute="top" secondItem="O8S-hu-zUo" secondAttribute="bottom" constant="10" id="P2s-2w-RwO"/>
+                            <constraint firstItem="O8S-hu-zUo" firstAttribute="top" secondItem="fKw-tJ-38r" secondAttribute="bottom" constant="10" id="SYL-pR-pzn"/>
+                            <constraint firstItem="Xge-R3-Ts5" firstAttribute="trailing" secondItem="O8S-hu-zUo" secondAttribute="trailing" constant="10" id="d4i-87-2Lg"/>
+                            <constraint firstItem="O8S-hu-zUo" firstAttribute="leading" secondItem="Xge-R3-Ts5" secondAttribute="leading" constant="10" id="eib-qM-awI"/>
+                            <constraint firstItem="Xge-R3-Ts5" firstAttribute="bottom" secondItem="3Fc-cn-dMe" secondAttribute="bottom" constant="10" id="rrj-Cd-bb0"/>
+                            <constraint firstItem="fKw-tJ-38r" firstAttribute="top" secondItem="Xge-R3-Ts5" secondAttribute="top" constant="10" id="ubD-VT-KL3"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="JYS-LB-OZh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-688" y="1560"/>
+        </scene>
         <!--Post View Controller-->
         <scene sceneID="Kkh-Hu-yfE">
             <objects>
