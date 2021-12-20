@@ -105,7 +105,7 @@ class HomeViewController: UIViewController, UITableViewDataSource, UITableViewDe
         
         let postData = postArray[indexPath!.row]
         
-        if let myid = Auth.auth().currentUser?.uid {
+        if (Auth.auth().currentUser?.uid) != nil {
             touchedDataId = postData.id
             self.performSegue(withIdentifier: "toComment", sender: nil)
         }
