@@ -16,13 +16,12 @@ class CommentViewController: UIViewController {
     var postDataId: String = ""
     
     @IBAction func postComment(_ sender: Any) {
-        let postRef = Firestore.firestore().collection(Const.PostPath).document()
         SVProgressHUD.show()
         
-        if let myid = Auth.auth().currentUser?.uid {
+        if (Auth.auth().currentUser?.uid) != nil {
             let postRef = Firestore.firestore().collection(Const.PostPath).document(postDataId)
             let name = Auth.auth().currentUser?.displayName
-            var commentData: [String: Any] = ["author": name, "comment": commentText.text]
+            let commentData: [String: String?] = ["author": name, "comment": commentText.text]
             postRef.updateData(["comments": FieldValue.arrayUnion([commentData])])
             SVProgressHUD.showSuccess(withStatus: "投稿しました")
         } else {
