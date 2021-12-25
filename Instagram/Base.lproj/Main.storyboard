@@ -42,7 +42,7 @@
                                     <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </buttonConfiguration>
                                 <connections>
-                                    <action selector="zhandleCancelButton:" destination="KGQ-kD-VOr" eventType="touchUpInside" id="nWL-LK-FNZ"/>
+                                    <action selector="handleCancelButton:" destination="KGQ-kD-VOr" eventType="touchUpInside" id="DZ0-Ox-268"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jDZ-OR-zrl">
